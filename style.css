@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+}
+a,
+a:hover,
+a:active,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+nav {
+  box-shadow: -7px 19px 11px -9px rgba(35, 35, 37, 1);
+}
+nav a {
+  font-family: "Viga";
+  color: #1d1d1d;
+  text-decoration: none;
+  font-size: 40px;
+  margin: 0 10px;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #d1c2e4;
+  height: 130px;
+  align-items: center;
+  padding-right: 10px;
+}
+article {
+  background-color: white;
+  height: 802px;
+}
+h1 {
+  font-family: "Viga";
+  font-size: 140;
+  color: #4b3579;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 3%;
+}
+.titulo {
+  justify-content: flex-start;
+  display: block;
+  padding: 20% 5%;
+  font-size: 148px;
+}
+footer {
+  height: 230px;
+  background-color: #d1c2e4;
+}
+p,
+li {
+  font-family: "Josefin Sans";
+  font-size: 30px;
+  padding-left: 3%;
+  padding-top: 1%;
+}
+h2 {
+  font-family: "Josefin Sans";
+  font-weight: 70%;
+  font-size: 40px;
+  padding-top: 3%;
+  padding-left: 2.5%;
+}
+main {
+  background-color: #f5f5f5;
+}
+img {
+  padding-left: 3.5%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
