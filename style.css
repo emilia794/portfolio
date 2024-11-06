@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 a,
 a:hover,
@@ -7,6 +8,7 @@ a:active,
 a:visited {
   color: black;
   text-decoration: none;
+  cursor: pointer;
 }
 nav {
   box-shadow: -7px 19px 11px -9px rgba(35, 35, 37, 1);
@@ -17,23 +19,20 @@ nav a {
   text-decoration: none;
   font-size: 40px;
   margin: 0 10px;
+  cursor: pointer;
 }
 header {
   display: flex;
   justify-content: flex-end;
-  background-color: #d1c2e4;
-  height: 130px;
+  background-color: #adadc9;
+  height: 100px;
   align-items: center;
   padding-right: 10px;
 }
-article {
-  background-color: white;
-  height: 802px;
-}
 h1 {
   font-family: "Viga";
-  font-size: 140;
-  color: #4b3579;
+  font-size: 140px;
+  color: #696880;
   display: flex;
   justify-content: flex-start;
   padding-left: 3%;
@@ -46,7 +45,7 @@ h1 {
 }
 footer {
   height: 230px;
-  background-color: #d1c2e4;
+  background-color: #adadc9;
 }
 p,
 li {
@@ -57,16 +56,117 @@ li {
 }
 h2 {
   font-family: "Josefin Sans";
+  color: #7f7dac;
   font-weight: 70%;
-  font-size: 40px;
+  font-size: 50px;
   padding-top: 3%;
   padding-left: 2.5%;
-}
-main {
-  background-color: #f5f5f5;
+  width: 250px;
 }
 img {
   padding-left: 3.5%;
   padding-top: 2%;
   padding-bottom: 1%;
+}
+.presentacion_main {
+  background-color: #eeeeee;
+  height: 400px;
+}
+.about_main {
+  background-color: #fafafa;
+}
+.academics_main {
+  background-color: #eeeeee;
+}
+.sport_main {
+  background-color: #fafafa;
+}
+h3 {
+  color: #7f7dac;
+  font-family: "Josefin Sans";
+  font-style: italic;
+  font-size: 36px;
+  margin-left: 2%;
+}
+.lista_fortalezas {
+  display: flexbox;
+  justify-content: flex-start;
+}
+.lista_debilidad {
+  display: flexbox;
+  justify-content: flex-end;
+}
+.academics_main {
+  height: 800px;
+  display: grid;
+  grid-template-areas:
+    "title text-img"
+    "text-img2  text";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  padding: 0 24px;
+  justify-items: center;
+}
+.post1 {
+  grid-area: title;
+}
+.kanguro_img {
+  grid-area: text-img;
+}
+.bandera_img {
+  grid-area: text-img2;
+}
+.descripcion_clase {
+  grid-area: text;
+}
+.presentacion_main {
+  grid-template-areas:
+    "title"
+    "boton";
+  grid-template-rows: 5fr 1fr;
+}
+.titulo_main {
+  grid-area: title;
+  font-size: 110px;
+}
+.sport_main {
+  height: 800px;
+  display: grid;
+  grid-template-areas:
+    "title2 text-img2"
+    "text-img22  text2";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  padding: 0 24px;
+  justify-items: center;
+}
+.titulo_deportemain {
+  grid-area: title2;
+  font-size: 60px;
+}
+.descripcion_deporte {
+  grid-area: text2;
+}
+.playa-img {
+  grid-area: text-img2;
+}
+.volley-img {
+  grid-area: text-img22;
+}
+.boton_ensayo {
+  grid-area: "boton";
+  height: 40px;
+  width: 150px;
+  border-radius: 8%;
+  margin-top: 50px;
+  margin-left: 12px;
+  font-family: "Viga";
+  background-color: #cdd2d5;
+}
+footer img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
